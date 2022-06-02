@@ -43,9 +43,20 @@ ul {
     display: grid;
     height: 70vh;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
   }
 
- .main-logo {
+ /* .main-logo {
    align-items: center;
    height: 75px;
- }
+ } */
+ 
+.tamanho img {
+  height: 350px;
+  width: auto;
+}
+tamanho {
+  display: flex;
+  justify-content: center;
+}
