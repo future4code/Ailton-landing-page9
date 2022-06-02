@@ -43,5 +43,5 @@ ul {
     display: grid;
     padding: 10px;
     height: 70vh;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
