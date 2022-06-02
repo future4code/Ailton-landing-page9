@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+li a {
+    border-radius: 12px;
+    color: rgb(65, 53, 53);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+li a:hover {
+    background-color: #5f4b4f;
+}
+
+/*menu bar*/
+.bar {
+    display: none;
+}
+
+.bar_one {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/*area de produtos*/
+
+#grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+}
+
+#grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.banner img {
+    border: 1PX solid black;
+    max-width: 800px;
+    margin-right: 5px;
+}
+
+.banner_ri img {
+    display: flex;
+    max-width: 240px;
+    margin-bottom: 5px;
+}
+
+/*grade de pordutos*/
+#grade_produtos {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    gap: 10px;
+}
+.produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 1px #000000;
+    height: 212px;
+    cursor: pointer;
+}
+.produto:hover {
+    opacity: 0.8;
+    transition: .5s;
+}
+.produto:active {
+    background-color: rgb(109, 104, 104);
+}
+.logo_mc {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logo_produto {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_produto img {
+    max-width: 260px;
+}
+button {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+button:hover {
+    background-color: #ccc;
+}
+/*Responsividade*/
+@media (max-width: 1040px) {
+    .banner_ri img {
+        display: inline;
+    }
+
+    .banner img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 730px) {
+    nav ul {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 628px) {
+    nav ul {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .banner_ri img {
+        max-width: 25vh;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 468px) {
+    .banner_ri img {
+        max-width: 15vh;
+    }
+}
