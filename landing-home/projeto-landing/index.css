@@ -3,17 +3,23 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:  red;
+    background-color:  #ffff;
   }
   
   li {
-    float: right;
+    float: left;
   }
   
   li a {
@@ -27,3 +33,18 @@ ul {
   li a:hover {
     background-color: #5f4b4f;
   }
+  
+  .logo img {
+    width: 100px;
+  }
+
+  section {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+ .main-logo {
+   align-items: center;
+   height: 75px;
+ }
