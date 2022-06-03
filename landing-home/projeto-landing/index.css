@@ -1,8 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
 }
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -11,41 +14,90 @@ header {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:  #ffffff;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    border-radius: 12px;
-    color: rgb(65, 53, 53);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #5f4b4f;
-  }
-  
-  .logo img {
-    width: 100px;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
 
-  section {
-    display: grid;
-    height: 70vh;
-    grid-template-columns: 1fr 1fr;
-  }
+li {
+  float: left;
+}
 
- .main-logo {
+li a {
+  display: block;
+  border-radius: 12px;
+  color: rgb(65, 53, 53);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #5f4b4f;
+}
+
+.logo img {
+  width: 100px;
+}
+
+#flex {
+  min-height: 80vh;
+}
+.bar {
+  display: none;
+}
+.bar_one {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+.flex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+.flex-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* .main-logo {
    align-items: center;
    height: 75px;
- }
+ } */
+
+.tamanho img {
+  max-width: 200px;
+  margin-top: 10px;
+}
+.tamanho {
+
+}
+
+.tamanho {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto img {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .bar {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
