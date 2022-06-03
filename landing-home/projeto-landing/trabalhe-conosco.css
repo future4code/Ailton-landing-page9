@@ -44,40 +44,19 @@ ul {
    height: 75px;
  }
 
+ .bar {
+  display: none;
+}
+
+.bar_one {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
 /* ----Carol ------*/
 
-
-/*.container-contatos{
-    display:grid;
-    grid-template-rows: reteat autofill(1fr)
-}*/
-
- /*.contato-pagina{
-    border: 4px solid pink;8
-    display: grid;
-    grid-template-rows: 1fr 1fr 2fr ;
-    gap: 4%; 
-    align-items:center;
-    text-align: center;
-    justify-content: space-evenly;
-   padding-right: 16%;
-    padding-left: 16%;
-    padding-top: 16%;
-    padding-bottom: 16%;
- }*/
-/*
- .contato-pagina{
-
- }
-
-.area-texto-cliente{
-    justify-items: stretch;
-    width: 200px;
-    height: 150px;
-    resize: none;
-    border: 1px solid gray;
-}
-*/
 .contato-pagina{
   height: calc(100vh - 150px);
   display:flex;
@@ -89,29 +68,46 @@ ul {
 .contato-titulo{
     text-align:center;
     font-size:x-large;
+    padding-bottom: 5%;
 }
+
 
 input{
   display:block;
-  border:none;
+  border: none;
   border-bottom: 1px solid black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  outline:none;
 }
 
 .formulario{
   display:flex;
   justify-content:center;
+  width: 100%;
+  padding: 10px;
 }
 
-form{
-  width: 50%;
-}
 
 textarea{
-  max-width: 200px;
+  width: 300px;
   max-height: 150px;
 }
 
 label{
   padding: 10px;
+}
+
+form{
+  width:50%;
+}
+
+@media (max-width:600px) {
+    nav ul{
+      display:none;
+    }
+
+    .bar{
+      display:block;
+    }
 }
