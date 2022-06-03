@@ -4,7 +4,7 @@
 
 <h1> PROJETO SITE D DELIVERY 4FOOD </h1>
 
-<h2> <a target="_blanck" href="*LINK DO SITE AQUI"> Link para acessar o site </a> </h2>
+<h2> <a target="_blanck" href="https://hurried-rock.surge.sh/index.html"> Link para acessar o site </a> </h2>
 
 <h3 Descrição </h3>
 
