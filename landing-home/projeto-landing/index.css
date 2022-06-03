@@ -4,6 +4,8 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -60,4 +62,11 @@ ul {
 tamanho {
   display: flex;
   justify-content: center;
+ }
+
+ .produto img {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }

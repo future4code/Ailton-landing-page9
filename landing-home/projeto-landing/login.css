@@ -11,6 +11,17 @@ header {
   background-color: #ffff;
 }
 
+.bar {
+  display: none;
+}
+
+.bar_one {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -51,4 +62,16 @@ ul {
 img {
     height: 20%;
     width: 20%;
+}
+
+@media (max-width: 628px) {
+  nav ul {
+      display: none;
+  }
+
+  .bar {
+      display: block;
+      margin-right: 20px;
+  }
+
 }
