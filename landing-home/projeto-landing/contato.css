@@ -34,6 +34,16 @@ ul {
   li a:hover {
     background-color: #5f4b4f;
   }
+  .bar {
+    display: none;
+}
+
+.bar_one {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 10px;
+}
   
   .logo img {
     width: 100px;
@@ -44,4 +54,16 @@ ul {
     padding: 10px;
     height: 70vh;
     /* grid-template-columns: 1fr; */
+  }
+
+  @media (max-width: 628px) {
+    nav ul {
+        display: none;
+    }
+  
+    .bar {
+        display: block;
+        margin-right: 20px;
+    }
+  
   }
