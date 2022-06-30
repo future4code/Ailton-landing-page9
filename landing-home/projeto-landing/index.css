@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+}
+
+.dropbtn {
+  background-color: #584736;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #b8a9a9}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6b4e4e;
+}
+
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #ffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  border-radius: 12px;
+  color: rgb(65, 53, 53);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #5f4b4f;
+}
+
+.logo img {
+  width: 100px;
+}
+
+#flex {
+  min-height: 80vh;
+}
+.bar {
+  display: none;
+}
+.bar_one {
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+.flex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+.flex-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* .main-logo {
+   align-items: center;
+   height: 75px;
+ } */
+
+.tamanho img {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.tamanho {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto img {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .bar {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
